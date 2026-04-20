@@ -7,6 +7,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/025fb6f23f.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,25 @@
                 <li><a href="#" class="nav__link nav__link--primary">Contact</a></li>
                 <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
             </ul>
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                         <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                </ul>
+            </div>
           </div>
         </nav>
         <header>
@@ -323,13 +343,32 @@
 
     <section id="explore">
          <div class="container">
-            <div class="row">
+            <div class="row row__column">
                 <h2> Explore more <span class="purple">Books</span></h2>
+                <a href="#features">
                 <button class="btn">Browse books</button>
+                </a>
             </div>
     </section>
-
 </main>
 
+<footer>
+<div class="container">
+    <div class="row row__column">
+        <a href="#">
+        <figure class="footer__logo">
+            <img src="./assets/Library.svg " class="footer__logo--img" alt="footer image">
+        </figure>
+        </a>
+        <div class="footer__list">
+            <a href="" class="footer__link">Home</a>
+            <a href="" class="footer__link no-cursor">About</a>
+            <a href="" class="footer__link">Books</a>
+            <a href="" class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy: 2026 Library</div>
+    </div>
+</div>
+</footer>
 </body>
 </html>
